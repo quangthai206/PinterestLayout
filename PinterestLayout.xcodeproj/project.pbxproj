@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		FDC9D35B26AD2B6500C180CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC9D35926AD2B6500C180CC /* Main.storyboard */; };
 		FDC9D35D26AD2B6900C180CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC9D35C26AD2B6900C180CC /* Assets.xcassets */; };
 		FDC9D36026AD2B6900C180CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC9D35E26AD2B6900C180CC /* LaunchScreen.storyboard */; };
+		FDC9D36826AD46F100C180CC /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC9D36726AD46F100C180CC /* PinterestLayout.swift */; };
+		FDC9D36B26AD5E8000C180CC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC9D36926AD5E8000C180CC /* CollectionViewCell.swift */; };
+		FDC9D36C26AD5E8000C180CC /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC9D36A26AD5E8000C180CC /* CollectionViewCell.xib */; };
+		FDC9D36F26AD6E9700C180CC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FDC9D36E26AD6E9700C180CC /* SDWebImage */; };
+		FDC9D37226AD747400C180CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC9D37126AD747400C180CC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		FDC9D35C26AD2B6900C180CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC9D35F26AD2B6900C180CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC9D36126AD2B6900C180CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC9D36726AD46F100C180CC /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		FDC9D36926AD5E8000C180CC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FDC9D36A26AD5E8000C180CC /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		FDC9D37126AD747400C180CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC9D36F26AD6E9700C180CC /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,7 @@
 		FDC9D35226AD2B6500C180CC /* PinterestLayout */ = {
 			isa = PBXGroup;
 			children = (
+				FDC9D37026AD746800C180CC /* Models */,
 				FDC9D35326AD2B6500C180CC /* AppDelegate.swift */,
 				FDC9D35526AD2B6500C180CC /* SceneDelegate.swift */,
 				FDC9D35726AD2B6500C180CC /* ViewController.swift */,
@@ -63,8 +74,19 @@
 				FDC9D35C26AD2B6900C180CC /* Assets.xcassets */,
 				FDC9D35E26AD2B6900C180CC /* LaunchScreen.storyboard */,
 				FDC9D36126AD2B6900C180CC /* Info.plist */,
+				FDC9D36726AD46F100C180CC /* PinterestLayout.swift */,
+				FDC9D36926AD5E8000C180CC /* CollectionViewCell.swift */,
+				FDC9D36A26AD5E8000C180CC /* CollectionViewCell.xib */,
 			);
 			path = PinterestLayout;
+			sourceTree = "<group>";
+		};
+		FDC9D37026AD746800C180CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDC9D37126AD747400C180CC /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = PinterestLayout;
+			packageProductDependencies = (
+				FDC9D36E26AD6E9700C180CC /* SDWebImage */,
+			);
 			productName = PinterestLayout;
 			productReference = FDC9D35026AD2B6500C180CC /* PinterestLayout.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +135,9 @@
 				Base,
 			);
 			mainGroup = FDC9D34726AD2B6500C180CC;
+			packageReferences = (
+				FDC9D36D26AD6E9700C180CC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = FDC9D35126AD2B6500C180CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +154,7 @@
 			files = (
 				FDC9D36026AD2B6900C180CC /* LaunchScreen.storyboard in Resources */,
 				FDC9D35D26AD2B6900C180CC /* Assets.xcassets in Resources */,
+				FDC9D36C26AD5E8000C180CC /* CollectionViewCell.xib in Resources */,
 				FDC9D35B26AD2B6500C180CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC9D36B26AD5E8000C180CC /* CollectionViewCell.swift in Sources */,
+				FDC9D36826AD46F100C180CC /* PinterestLayout.swift in Sources */,
+				FDC9D37226AD747400C180CC /* User.swift in Sources */,
 				FDC9D35826AD2B6500C180CC /* ViewController.swift in Sources */,
 				FDC9D35426AD2B6500C180CC /* AppDelegate.swift in Sources */,
 				FDC9D35626AD2B6500C180CC /* SceneDelegate.swift in Sources */,
@@ -341,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDC9D36D26AD6E9700C180CC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDC9D36E26AD6E9700C180CC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDC9D36D26AD6E9700C180CC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDC9D34826AD2B6500C180CC /* Project object */;
 }
